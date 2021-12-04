@@ -1,4 +1,4 @@
-import { useCart } from "../../Providers/Cart"
+// import { useCart } from "../../Providers/Cart"
 import {Image, Description} from "./style"
 
 const ProductCart = ({name, price, image}) => {

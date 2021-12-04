@@ -5,6 +5,7 @@ import { Favorite, Share, MoreVert } from '@material-ui/icons';
 import { StyledBadge } from '../Header/style';
 import { AddShoppingCartTwoTone } from '@material-ui/icons';
 import { useCart } from "../../Providers/Cart";
+import "./style.css"
 
 
 export default function ProductCard({id, description, name, price, image, item}) {
@@ -15,7 +16,7 @@ export default function ProductCard({id, description, name, price, image, item})
     <Card sx={{ maxWidth: 305, marginBottom: "20px", backgroundColor:"#efefef"}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{  bgcolor: red[500]}} aria-label="recipe">
             J
           </Avatar>
         }

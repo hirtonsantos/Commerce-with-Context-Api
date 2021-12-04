@@ -20,7 +20,7 @@ const Cart = ({showcart}) => {
       <h2>Products Cart</h2>
       <ul>
       {cart.map((item) => {
-        console.log("coi",item)
+        // console.log("coi",item)
         return (
           <li>
           <ProductCart name={item.name} price={item.price} image={item.image}/>
@@ -28,6 +28,9 @@ const Cart = ({showcart}) => {
         )
       }).splice(-1)}
       </ul>
+      <button>
+        Ir para o carrinhoo
+      </button>
     </Conteiner>
   );
 };
