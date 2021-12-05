@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Typography, IconButton, Avatar, Card ,CardActions , CardContent ,CardMedia, CardHeader} from '@material-ui/core';
-import { red } from '@material-ui/core/colors';
 import { Favorite, Share, MoreVert } from '@material-ui/icons';
 import { StyledBadge } from '../Header/style';
 import { AddShoppingCartTwoTone } from '@material-ui/icons';
