@@ -17,6 +17,8 @@ const CartPage = () => {
     return cart.indexOf(el) === i;
   });
 
+  console.log(changeColor)
+
   return (
       <Conteiner> 
         <Content>
