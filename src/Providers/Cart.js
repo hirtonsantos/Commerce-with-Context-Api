@@ -14,8 +14,9 @@ export const CartProvider = ({ children }) => {
 
   const removeFromCart = (id) => {
       const index = cart.map((item) => item.id).indexOf(Number(id))
-      const newCart = cart.splice(index,index+1)
-      setCart(newCart)
+      cart.splice(index,index+1)
+      // console.log(cart)
+      setCart([...cart])
   }
 
   return (

@@ -13,7 +13,7 @@ const [catalogue, setCatalogue] = useState([
     name: "Jaqueta Juventus",
     price: 299.99,
     image:
-      "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/9da06782ff3d4e86a52cace700a632a1_9366/jaqueta-hino-juventus-tiro.jpg",
+      "https://images.tcdn.com.br/img/img_prod/638286/jaqueta_juventus_fc_2021_climalite_4997_1_57164f201631ef6311f458ac58faeb48.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const [catalogue, setCatalogue] = useState([
     name: "Bolsa Juventus",
     price: 89.9,
     image:
-      "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/ad1684fc9ffb4959a504ace700a98ac2_9366/bolsa-gym-sack-juventus.jpg",
+      "https://imgcentauro-a.akamaihd.net/900x900/95421602/mochila-do-juventus-img.jpg",
   },
   {
     id: 3,
@@ -31,16 +31,16 @@ const [catalogue, setCatalogue] = useState([
     name: "Calça Treino",
     price: 249.99,
     image:
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/da58014b91e44af19e50ac6400b3d69e_9366/Calca_Treino_Juventus_Human_Race_Branco_GK7789_21_model.jpg",
+      "https://thumblr.uniid.it/product/211260/8db2c1278f8b.jpg",
   },
   {
     id: 4,
     description:
       "Uma versão fora dos gramados das camisas usadas pelos jogadores no dia de jogo, esta camisa tem barra reta e escudo do clube costurado.",
-    name: "Camisa Juventus",
+    name: "Camisa Juventus 21/22",
     price: 199.99,
     image:
-      "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/72b621c3001445ed9f16ab1f00cfc960_9366/Camisa_Juventus_1_Branco_EI9900_01_laydown.jpg",
+      "https://imgcentauro-a.akamaihd.net/900x900/96455051/camisa-juventus-i-21-22-adidas-masculina-img.jpg",
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const [catalogue, setCatalogue] = useState([
     name: "Camisa alternativa",
     price: 159.99,
     image:
-      "https://static.netshoes.com.br/produtos/camisa-juventus-pre-jogo-2122-adidas-masculina/22/3ZP-0975-322/3ZP-0975-322_zoom1.jpg?",
+      "https://imgcentauro-a.akamaihd.net/900x900/M0HD5003/camisa-pre-jogo-do-juventus-adidas-masculina-img.jpg",
   },
   {
     id: 6,

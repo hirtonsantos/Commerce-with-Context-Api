@@ -3,6 +3,7 @@
 // import { removeToCardThunk } from "../../store/modules/Cart/thunks";
 // import Button from "../Button";
 // import {useState} from "react"
+import { useHistory } from "react-router";
 import { useCart } from "../../Providers/Cart";
 import ProductCart from "../ProductCart";
 
@@ -14,13 +15,18 @@ const Cart = ({showcart}) => {
   // CHAMO O COMPONENTE PRODUCTCART
   const {cart} = useCart()
 
+  const history = useHistory()
+
+  const cartSom = cart.reduce((acc, curr) => {
+    return acc + curr.price
+  }, 0 )
+
 
   return (
     <Conteiner showCart={showcart}>
-      <h2>Products Cart</h2>
+      <h2>Products Cart - <span>{cartSom.toFixed(2)}</span></h2>
       <ul>
       {cart.map((item) => {
-        // console.log("coi",item)
         return (
           <li>
           <ProductCart name={item.name} price={item.price} image={item.image}/>
@@ -28,8 +34,8 @@ const Cart = ({showcart}) => {
         )
       }).splice(-1)}
       </ul>
-      <button>
-        Ir para o carrinhoo
+      <button onClick={() => history.push("/CartPage")}>
+        Ir para o carrinho
       </button>
     </Conteiner>
   );

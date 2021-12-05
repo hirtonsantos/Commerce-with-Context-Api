@@ -17,7 +17,7 @@ const ProductCart = ({name, price, image}) => {
 
         <Description>
         <span>{name}</span>
-        <span>{price}</span>
+        <span>{price} R$</span>
         </Description>
 
         {/* <button onClick={() => removeFromCart(name)}>

@@ -13,10 +13,10 @@ export default function ProductCard({id, description, name, price, image, item})
   const {addToCart} = useCart()
 
   return (
-    <Card sx={{ maxWidth: 305, marginBottom: "20px", backgroundColor:"#efefef"}}>
+    <Card sx={{ maxWidth: 305, marginBottom: "20px"}}>
       <CardHeader
         avatar={
-          <Avatar sx={{  bgcolor: red[500]}} aria-label="recipe">
+          <Avatar sx={{bgcolor: "black"}} aria-label="recipe">
             J
           </Avatar>
         }

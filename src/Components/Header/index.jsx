@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <Box>
-          <AppBar position="static" sx={{fontWeight:"bold",  color: "var(--black)", backgroundColor: "var(--white)"}}>
+          <AppBar position="static" sx={{fontWeight:"bold",  color: "var(--black)", backgroundColor: "white"}}>
             <Toolbar sx={{justifyContent:"space-around"}}>
               <Typography variant="h6" component="div" sx={{fontWeight:"bold", flexGrow: 0 }}>
                 JuveCommerce

@@ -8,6 +8,9 @@ export const Conteiner = styled.div`
   position: absolute;
   right: -148px;
   top: 50px;
+  cursor: default;
+  /* font-family: "Juventus Fans Regular"; */
+  font-family: 'Changa', sans-serif;
   display: ${(props) => (props.showCart ?  "flex" : "none")};
   flex-direction: column;
 
@@ -26,19 +29,32 @@ export const Conteiner = styled.div`
   h2 {
     font-size: 25px;
     padding-top: 10px;
-    font-family: "Juventus Fans Regular";
     color: black;
-
+    font-family: "Juventus Fans Regular";
     font-weight: bold;
     line-height: 24px;
     text-align: center;
     text-transform: uppercase;
+    span{
+      color: #f44336;
+    }
   }
 
   button{
     cursor: pointer;
-    background-color: #f44336;
+    /* background-color: #f44336; */
     height: 50px;
+
+      width: 100%;
+    display: block;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Changa';
+    background-color: #ff2850;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   ul{
@@ -50,7 +66,7 @@ export const Conteiner = styled.div`
     margin-top: 15px;
     border-top: 1px solid #E8E8E8;
     li {
-      text-align: left;
+    text-align: left;
     min-height: 40px;
     display: flex;
     /* color: red; */
@@ -60,9 +76,8 @@ export const Conteiner = styled.div`
     font-size: 15px;
     text-transform: uppercase;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: start;
     position: relative;
     }
-    
   }
 `;
