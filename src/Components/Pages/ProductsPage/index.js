@@ -11,7 +11,6 @@ function ProductsPage() {
       <GlobalStyle />
       <Header />
       <ProductsList/>
-      {/* <CartPage/> */}
     </>
   );
 }

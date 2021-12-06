@@ -1,12 +1,13 @@
-import Routes from "./Components/Pages/Routes";
-import ProductsList from "./Components/ProductsList";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./Components/Routes";
 
 function App() {
 
   return (
     <>
-      <ProductsList/>
+      <BrowserRouter>
       <Routes/>
+      </BrowserRouter>
     </>
   );
 }

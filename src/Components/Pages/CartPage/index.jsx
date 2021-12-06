@@ -6,18 +6,11 @@ import { useState } from "react";
 const CartPage = () => {
 
   const [changeColor] = useState(false)
-  const {cart, removeFromCart} = useCart()
+  const {removeFromCart, newCartSom, semRepetidos, onchange, cartAtualizado} = useCart()
   const history = useHistory("/")
 
-  const newCartSom = cart.reduce((acc, curr) => {
-    return acc + curr.price
-  }, 0 )
-
-  const semRepetidos = cart.filter(function(el, i) {
-    return cart.indexOf(el) === i;
-  });
-
-  console.log(changeColor)
+  console.log("cart", changeColor)
+  console.log("cartAtualizado", cartAtualizado)
 
   return (
       <Conteiner> 
@@ -37,7 +30,7 @@ const CartPage = () => {
 
       <BoxButton>
           <div className="button-conteiner">
-        <Button>Fechar carrinho </Button>
+        <Button onClick={onchange}>Fechar carrinho </Button>
         </div>
       </BoxButton>
 

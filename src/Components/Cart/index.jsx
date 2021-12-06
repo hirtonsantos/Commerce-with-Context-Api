@@ -11,20 +11,13 @@ import { Conteiner } from "./style";
 
 const Cart = ({showcart}) => {
 
-  //AQUI EU FAÇO UM MAP PARA MOSTRAR TODOS OS PRODUTOS DENTRO DO CARRINHO
-  // CHAMO O COMPONENTE PRODUCTCART
-  const {cart} = useCart()
+  const {cart, newCartSom} = useCart()
 
   const history = useHistory()
 
-  const cartSom = cart.reduce((acc, curr) => {
-    return acc + curr.price
-  }, 0 )
-
-
   return (
     <Conteiner showCart={showcart}>
-      <h2>Products Cart - <span>{cartSom.toFixed(2)}</span></h2>
+      <h2>Products Cart - <span>{newCartSom.toFixed(2)}</span></h2>
       <ul>
       {cart.map((item) => {
         return (
