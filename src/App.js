@@ -1,11 +1,13 @@
 import Routes from "./Components/Pages/Routes";
+import ProductsList from "./Components/ProductsList";
 
 function App() {
 
   return (
-    <div>
+    <>
+      <ProductsList/>
       <Routes/>
-    </div>
+    </>
   );
 }
 
