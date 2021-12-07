@@ -1,7 +1,7 @@
-import Header from "../../Header";
+import Header from "../../Components/Header";
 import GlobalStyle from "../../styles/Global"
 // import { useCatalogue } from "./Providers/Products";
-import ProductsList from "../../ProductsList"
+import ProductsList from "../../Components/ProductsList"
 // import CartPage from "./Components/CartPage";
 
 function ProductsPage() {

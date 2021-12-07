@@ -1,5 +1,5 @@
 import {Content , Conteiner , Button, BoxButton, BoxContent, BoxText, BoxFigure, Section, SectionBox, Description} from "./style"
-import { useCart } from "../../../Providers/Cart";
+import { useCart } from "../../Providers/Cart";
 import { useHistory } from "react-router";
 import { useState } from "react";
 
