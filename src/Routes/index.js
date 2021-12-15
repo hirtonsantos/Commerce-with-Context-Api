@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom"
-import CartPage from "../Pages/CartPage"
+// import CartPage from "../Pages/CartPage"
 import ProductsPage from "../Pages/ProductsPage"
 
 function Routes (){
@@ -10,9 +10,9 @@ function Routes (){
                 <ProductsPage/>
             </Route>
 
-            <Route path="/CartPage">
+            {/* <Route path="/CartPage">
                 <CartPage/>
-            </Route>
+            </Route> */}
         </Switch>
     )
 }
