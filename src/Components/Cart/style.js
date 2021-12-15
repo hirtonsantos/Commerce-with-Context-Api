@@ -30,7 +30,7 @@ export const Conteiner = styled.div`
     font-size: 25px;
     padding-top: 10px;
     color: black;
-    font-family: "Juventus Fans Regular";
+    /* font-family: "Juventus Fans Regular"; */
     font-weight: bold;
     line-height: 24px;
     text-align: center;
