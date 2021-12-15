@@ -1,16 +1,14 @@
-// import GlobalStyle from "../../styles/Global"
-// import { useCatalogue } from "./Providers/Products";
-// import ProductsList from "../../Components/ProductsList"
-// import CartPage from "./Components/CartPage";
+import GlobalStyle from "../../styles/Global"
+import ProductsList from "../../Components/ProductsList"
+import Header from "../../Components/Header"
 
 function ProductsPage() {
 
   return (
     <>
-      {/* <GlobalStyle /> */}
-      {/* <Header />
-      <ProductsList/> */}
-      <h2>oi</h2>
+      <GlobalStyle /> 
+       <Header />
+      <ProductsList/>
     </>
   );
 }

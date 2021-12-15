@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { createContext } from "react/cjs/react.development";
+import { createContext } from "react";
 
 export const CatalogueContext = createContext();
 
