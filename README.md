@@ -14,6 +14,7 @@ Routes
 Context Api  
 Material UI  
 Components    
+localStorage  
 CSS3  
 Vercel  
 ReactJs  
