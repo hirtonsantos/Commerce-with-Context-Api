@@ -19,6 +19,8 @@ const CartPage = () => {
     return acc + curr.price
   }, 0 )
 
+  console.log(changeColor)
+
   return (
       <Conteiner> 
         <Content>
