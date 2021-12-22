@@ -4,22 +4,25 @@
 // import Button from "../Button";
 // import {useState} from "react"
 import { useHistory } from "react-router";
-import { useCart } from "../../Providers/Cart";
 import ProductCart from "../ProductCart";
 
 import { Conteiner } from "./style";
 
 const Cart = ({showcart}) => {
 
-  const {cart, newCartSom} = useCart()
-
   const history = useHistory()
+
+  const productsList = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const newCartSom = productsList.reduce((acc, curr) => {
+    return acc + curr.price
+  }, 0 )
 
   return (
     <Conteiner showCart={showcart}>
       <h2>Products Cart - <span>{newCartSom.toFixed(2)}</span></h2>
       <ul>
-      {cart.map((item) => {
+      {productsList.map((item) => {
         return (
           <li>
           <ProductCart name={item.name} price={item.price} image={item.image}/>
